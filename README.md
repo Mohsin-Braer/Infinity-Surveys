@@ -18,4 +18,4 @@ Worked alongside teammates: Ryan Bennett, Joy Kondo, and Ashkan Moghaddassi
 - [Bootstrap](https://getbootstrap.com/)
 
 
-[<img alt="alt_text" width="40px" src="demoImages/img0.PNG" />](https://www.google.com/)
+[<img alt="alt_text" width="40px" src="https://i.postimg.cc/pTpJP5PX/img0.png" />](https://i.postimg.cc/pTpJP5PX/img0.png)
