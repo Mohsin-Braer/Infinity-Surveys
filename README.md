@@ -16,3 +16,6 @@ Worked alongside teammates: Ryan Bennett, Joy Kondo, and Ashkan Moghaddassi
 - [Django](https://www.djangoproject.com/)
 - [Python 3](https://www.python.org/)
 - [Bootstrap](https://getbootstrap.com/)
+
+
+![alt](https://github.com/Mohsin-Braer/Infinity-Surveys/Infinity-Images/img0.jpg?raw=true)
