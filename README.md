@@ -10,7 +10,6 @@ Users will be able to schedule distribution of the questionnaires, easily design
 Worked alongside teammates: Ryan Bennett, Joy Kondo, and Ashkan Moghaddassi
 
 ### Instructions & Documentation ###
-The docs have all been organized by category/function in the `docs` folder. For your convenience, I've added the links here:
 - [Getting Started](./docs/getting-started.md)
 - [Routine Development Process](./docs/development-process.md)
 - [Term Glossary](./docs/glossary.md)
