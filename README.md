@@ -1,6 +1,6 @@
 # Infinity-Surveys
 
-Infinity Surveys is a peer evaluation tool that looks to streamline the peer assessment process for both the team member and the project lead/organizer by putting all necessary information into one place, complete with a backend database, and functioning frontend.
+Infinity Surveys is a peer evaluation software tool that looks to streamline the peer assessment process for both the team member and the project lead/organizer by putting all necessary information into one place, complete with a backend database, and functioning frontend.
 
 
 ### Project Objective ###   
