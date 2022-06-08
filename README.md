@@ -17,5 +17,20 @@ Worked alongside teammates: Ryan Bennett, Joy Kondo, and Ashkan Moghaddassi
 - [Python 3](https://www.python.org/)
 - [Bootstrap](https://getbootstrap.com/)
 
+## Demo Images ##
 
-[<img alt="alt_text" width="1000px" src="https://i.postimg.cc/pTpJP5PX/img0.png" />](https://i.postimg.cc/pTpJP5PX/img0.png)
+[<img alt="Home Page" width="1000px" src="https://i.postimg.cc/pTpJP5PX/img0.png" />](https://i.postimg.cc/pTpJP5PX/img0.png)
+
+[<img alt="Login Page" width="1000px" src="https://i.postimg.cc/sg4cmRny/img-0-1.png" />](https://i.postimg.cc/sg4cmRny/img-0-1.png)
+
+[<img alt="Home Page" width="1000px" src="https://i.postimg.cc/jjqhkk9f/img1.png" />](https://i.postimg.cc/jjqhkk9f/img1.png)
+
+[<img alt="Home Page" width="1000px" src="https://i.postimg.cc/DZHd0fzQ/img2.png" />](https://i.postimg.cc/DZHd0fzQ/img2.png)
+
+
+## Diagrams ##
+
+[<img alt="Home Page" width="1000px" src="https://i.postimg.cc/vmPvRtFN/Interaction-Diagram.png" />](https://i.postimg.cc/vmPvRtFN/Interaction-Diagram.png)
+
+[<img alt="Home Page" width="1000px" src="https://i.postimg.cc/yxRhZqJM/Infinity-UML-Diagram.png" />](https://i.postimg.cc/yxRhZqJM/Infinity-UML-Diagram.png)
+
