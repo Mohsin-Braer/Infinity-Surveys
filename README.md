@@ -18,4 +18,4 @@ Worked alongside teammates: Ryan Bennett, Joy Kondo, and Ashkan Moghaddassi
 - [Bootstrap](https://getbootstrap.com/)
 
 
-![Alt text](Infinity-Images/img0.png?raw=true)
+![alt text](https://raw.github.com/Mohsin-Braer/Infinity-Surveys/main/Infinity-Images/img0.png)
