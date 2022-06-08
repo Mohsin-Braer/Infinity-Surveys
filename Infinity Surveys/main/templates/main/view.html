@@ -1,0 +1,103 @@
+{% extends 'main/base.html' %}
+<!doctype html>
+from django.utils.html import format_html
+<html>
+    <title>Project Page</title>
+
+<body>
+{% block title %}
+Project
+{% endblock %} 
+{%load crispy_forms_tags %}
+
+{% block content %}
+<h1 class="header">Project {{ team.Project }}</h1>
+
+<h3 class="db_title">Team Lead</h3>
+<br><br><br>
+
+    {% for name in team.Lead.all %}
+       <p style="font-size: 25px; font-family:Questrial;color: #646b60;" >{{name}}</p>
+    {% endfor %}
+
+
+
+    <h3 class="db_title">Team Members</h3>
+    <br><br><br>
+        
+        <!-- {% for team in teams %}
+            <h1>This is {{ team.project }}</h1>
+        {% endfor %} -->
+        
+    
+        {% for name in team.members.all %}
+           <p style="font-size: 25px; font-family:Questrial;color: #646b60;" >{{name}}</p>
+        {% endfor %}
+
+        
+    
+        {% if field_value %} 
+        <h3 class="db_title">Project Lead View</h3>
+        <br></br><br><br>
+        <p style="font-size: 25px">Average Likert Score for {{ team.Project }}: {{class_avg}}</p>
+        <a href="/create" class="button">Create New Peer Assessment</a> &nbsp; &nbsp; &nbsp;  &nbsp; 
+        <a href="/teamcreation" class="button">Create a Team</a> &nbsp; &nbsp; &nbsp;  &nbsp; 
+        <a href="/PAresponse/?project={{ team.Project }}" class="button">View Summary</a><br><br> 
+        <form method = "POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+
+            <button type="submit" name = "submit" class="btn btn-success" style="font-family:'Questrial';background-color: #008080">Add Student to Team</button>
+            
+        </form>
+        &nbsp; &nbsp; &nbsp;  &nbsp;
+        
+        <form class = "action" method ="POST">
+            {% csrf_token %}
+            <button type="submit" name = "publish1" class="btn btn-success" style="font-family:Questrial" value = "Submit">Publish Summary</button> &nbsp; &nbsp; &nbsp;  &nbsp; 
+        </form> &nbsp; &nbsp; &nbsp;  &nbsp; 
+        <form class = "action" method ="POST">
+            {% csrf_token %}
+            <button type="submit" name = "unpublish" class="btn btn-success" style="font-family:'Questrial';background-color: rgba(189, 14, 14, 0.692)"value = "Submit" >UnPublish Summary</button>
+        </form>
+        {% else %}
+       
+        
+        
+
+        <h3 class="db_title">Past evaluations</h3>
+        <br><br><br><br>
+        
+        <h2>Evaluations for {{request.user.username}}</h2>
+        {% for pa in peerassessments%} 
+        {%if pa.Published%}
+            
+            {%if pa.Name == request.user.username%}
+                {%if pa.Team == team1%}
+
+                <p><b>Description:</b> {{pa.Description}}</p>
+                            
+                <p><b>Average Likert Score: {{pa.Average}}</p>
+                            
+                <p><b>Strengths: </b> {{pa.question5Open}}</p>
+                        
+                <p><b>Weaknesses:</b> {{pa.question6Open}}</p>
+                <br>
+             {%endif%}
+             
+            {%endif%}
+            
+
+            
+
+        {%endif%}
+        {%endfor%}
+
+        
+
+        {% endif %}
+{% endblock %}
+
+</body>
+
+</html>

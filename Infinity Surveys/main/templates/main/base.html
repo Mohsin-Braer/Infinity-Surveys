@@ -1,0 +1,230 @@
+
+<!doctype html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <title>Infinity Surveys</title>
+      <style>
+         .button {
+            background-color: #7f867b;
+            box-shadow: 0 5px 0 #646b60;
+            color: #f2f3f1;
+            padding: 0.5em 1em;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Questrial';
+            font-size: 20px;
+            
+        }
+        .projectbutton {
+            background-color: #7f867b;
+            box-shadow: 0 5px 0 #646b60;
+            color: #f2f3f1;
+            padding: 50px 75px;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Questrial';
+            font-size: 40px;
+            margin-right: 2pc;
+            margin-left: 2pc;
+            margin-top: 3pc;
+            margin-bottom: 3pc;
+        }
+        .button:hover{
+            color: #f1f1f1;
+            text-decoration: none;
+            background-color: #646b60;
+        }
+        .projectbutton:hover{
+            color: #f1f1f1;
+            text-decoration: none;
+            background-color: #646b60;
+        }
+      </style>
+    <style type="text/css">
+        .nav_bar {
+            height:100%;
+            position:absolute;
+            top: 0;
+            z-index: 1;
+            right: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            margin: 10px;
+            font-size: 16px;
+            font-family: 'Questrial';
+            color: #f2f3f1;
+            margin-right: 5px;
+        }
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            color: #818181;
+            display: inline-block;
+        }
+        .sidenav a:hover{
+            color: #f1f1f1;
+        }
+
+        .main {
+            text-align: center;
+            background-color: #c7c7bb;
+            color: #f2f3f1; 
+            padding: 10px 10px;
+        }
+        .highlights-title {
+            background-color: #f2f3f1;
+            color: #c7c7bb;
+            font-size: 18px;
+        }
+        .highlights-body {
+            background-color: #f2f3f1;
+            color: #c7c7bb;
+            font-size: 14px;
+        }
+        .form_body_template {
+            margin-right:350px;
+            margin-left:350px;
+        }
+        .button-style {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .header {
+            text-align:center;
+            font-family: 'Questrial';
+            color:#646b60;
+        }
+        title{
+            text-align: left;
+        }
+        .db_header {
+                text-align: left;
+                font-family: 'Questrial';
+                color: #646b60;
+                left: 0;
+                position:fixed;
+                margin-left: 80px;
+                margin-bottom: 50px;
+        }
+        .db_title {
+                text-align: left;
+                font-family: 'Questrial';
+                color: #646b60;
+                left: 0;
+                position:absolute;
+                margin-left: 80px;
+                margin-top: 30px;
+        }
+        .summ_title{
+            text-align: left;
+            font-family: 'Questrial';
+            color: #646b60;
+            font-size: 45px;
+               
+        }
+        p{
+            font-size: 16px;
+            font-family: 'Questrial';
+            color: #646b60;
+            
+            
+        }
+      
+        h2{
+            font-size: 28px;
+            font-family: 'Questrial';
+            color: #646b60;
+
+        }
+
+        
+        
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}Infinity Surveys &nbsp;&nbsp;<span style="font-size:50px">∞</span>{% endblock %}</title>
+</head>
+<body> 
+    <!-- is_authenticated means logged in-->
+    <!-- is_lead means team lead-->
+    <div class="nav_bar"> 
+         
+
+        {% if user.is_authenticated %}
+      
+        
+       
+        <a href='/profile', style="color:#c7c7bb">Profile</a>
+            &nbsp;
+            &nbsp;
+            <a href='/dashboard', style="color:#c7c7bb">Dashboard</a>
+            &nbsp;
+        
+           <!-- <li class="nav_bar", style="position: absolute; right: 0; top: 0; height:100%; z-index: 1;
+            right: 0;
+            overflow-x: hidden;
+            padding-top: 20px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false", style="color: #c7c7bb;">
+                Create
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/teamcreation">Create Team</a>
+                <a class="dropdown-item" href="/create">Create Assessment</a>
+                </div>
+            </li> -->
+            &nbsp;
+            &nbsp;
+           
+                <a href='/peerassessment', style="color:#c7c7bb">Peer Assessment Form</a>
+                &nbsp;
+                &nbsp;
+                <a href='/logout', style="color:#c7c7bb">Logout</a>
+                &nbsp;
+                &nbsp;
+        
+            
+        {% else %}
+        <a href='/register', style="color:#c7c7bb">Register</a>
+        &nbsp;
+        &nbsp;
+        <a href='/login', style="color:#c7c7bb">Login</a>
+        &nbsp;
+        &nbsp;
+        {% endif %}
+
+    </div>
+    </div>
+    <div id="content", name="content", class="main", style="background-color:#646b60">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <a href='http://127.0.0.1:8000/' class="mt-2", style="font-size:35px;color:#f2f3f1;font-family:'Questrial'">Infinity Surveys &nbsp;&nbsp;<span style="font-size:50px", style="font-family:'Questrial'">∞</span></a>
+            </div>
+        </div>
+    </div>
+    &nbsp;
+    &nbsp;
+    <div class="form_body_template">
+        &nbsp;
+            {% block content %}
+            {% endblock %}
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- {% if user.is_authenticated %} -->
+<!-- {% else %}  -->
+<!-- <p>Login <a href='/login'>Here</a></p> -->
+<!-- {% endif %} --> 

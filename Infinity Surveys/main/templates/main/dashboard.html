@@ -1,0 +1,65 @@
+{% extends 'main/base.html' %}
+<!doctype html>
+from django.utils.html import format_html
+
+<html>
+    <title>Dashboard</title>
+
+<body>
+{% block title %}
+Dashboard
+{% endblock %} 
+{%load crispy_forms_tags %}
+
+{% block content %}
+    <div class="db_header">
+        <h1 class="db_header">Welcome, &nbsp;{{request.user.username}}</h1>
+        <br><br><br>
+        {% if field_value %} 
+        <h3 class="db_header">Project Lead View</h3>
+        <br><br>
+        <a href="/create" class="button">Create New Peer Assessment</a> &nbsp; &nbsp; &nbsp;  &nbsp; 
+        <a href="/teamcreation" class="button">Create a Team</a> &nbsp; &nbsp; &nbsp;  &nbsp; 
+        <br><br>
+        
+
+        <h3 class="db_title">In Progress</h3>
+        <br><br>
+        {% for team in team_list %}
+        {%for lead in team.Lead.all%}
+        {%if lead.user == request.user%}
+            <a href="/view/?project={{ team.Project }}" class="projectbutton">{{ team }}</a>
+        {%endif%}
+        {%endfor%}
+        {% endfor %}
+
+        <br>
+        <h3 class="db_title">Completed</h3>
+        <br><br>
+        <a href="/dashboard" class="projectbutton"></a>
+        <br><br><br><br>
+
+        {%else%}
+        <h3 class="db_title">In Progress</h3>
+        <br><br>
+        
+        {% for team in team_list %}
+        {%for mem in team.members.all%}
+        {%if mem.user == request.user%}
+            <a href="/view/?project={{ team.Project }}" class="projectbutton">{{ team }}</a>
+        {%endif%}
+        {%endfor%}
+        {% endfor %}
+
+        <br>
+        <h3 class="db_title">Completed</h3>
+        <br><br>
+        <a href="/dashboard" class="projectbutton"></a>
+        <br><br><br><br>
+    </div>
+    <br><br><br><br>
+</body>
+ {%endif%}
+{% endblock %}
+
+</html>

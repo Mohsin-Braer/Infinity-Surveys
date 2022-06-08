@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+<!doctype html>
+<html>
+    <title>Dashboard</title>
+
+<body>
+{% block title %}
+Dashboard
+{% endblock %} 
+{%load crispy_forms_tags %}
+
+{% block content %}
+    <h3 class="summ_title" style= "position: static;" >Peer Assessment Summary</h3>
+    <br>
+
+    
+        {% for pa in peerassessments%}   
+        {%if pa.Team == team%}
+
+            <h2>{{pa.CurrentUser}}'s Response for {{pa}}</h2>
+                        
+            <p><b>Description:</b> {{pa.Description}}</p>
+                        
+            <p><b>Did this person do their tasks on time?</b> {{pa.question1Likert}}</p>
+                        
+            <p><b>Did this person help others on their team when needed?</b> {{pa.question2Likert}}</p>
+                        
+            <p><b>Did this person effectively communicate?</b> {{pa.question3Likert}}</p>
+                    
+            <p><b>How likely are you to work with this person again?</b> {{pa.question4Likert}}</p>
+                        
+            <p><b>What were this person's strengths?</b> {{pa.question5Open}}</p>
+                    
+            <p><b>What were this person's weaknesses?</b> {{pa.question6Open}}</p>
+            {%endif%}
+            {%endfor%}
+        
+</body>
+ 
+{% endblock %}
+
+</html>

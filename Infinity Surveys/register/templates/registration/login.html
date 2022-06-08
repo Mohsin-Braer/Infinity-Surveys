@@ -1,0 +1,24 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+Login Here
+{% endblock %} 
+
+{%load crispy_forms_tags %}
+
+{% block content %} 
+<h1 class="header">Log In</h1>
+<br>
+    <form method="post" class="from-group">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <p>Don't have an account? Create one <a href="/register" style="text-decoration:underline;color:#008080">here</a></p>
+        <br><br>
+        <div class="button-style">
+            <br><br><br><br>
+            <button type="submit" class="btn btn-success" style="font-family:'Questrial';background-color: #7f867b">Cancel</button>
+            &nbsp;&nbsp;
+            <button type="submit" class="btn btn-success" style="font-family:'Questrial';background-color: #008080"">Login</button>
+        </div>
+    </form>
+{% endblock %}
