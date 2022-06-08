@@ -9,12 +9,6 @@ Users will be able to schedule distribution of the questionnaires, easily design
 
 Worked alongside teammates: Ryan Bennett, Joy Kondo, and Ashkan Moghaddassi
 
-### Instructions & Documentation ###
-- [Getting Started](./docs/getting-started.md)
-- [Routine Development Process](./docs/development-process.md)
-- [Term Glossary](./docs/glossary.md)
-- [Working with Emails](./docs/emailing.md)
-
 ### Useful Tools/Resources ###
 - [Django Documentation](https://docs.djangoproject.com/en/4.0/)
 
