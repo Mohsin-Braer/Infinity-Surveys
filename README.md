@@ -19,8 +19,7 @@ Worked alongside teammates: **Ryan Bennett**, **Joy Kondo**, and **Ashkan Moghad
 
 
 <!-- Demo -->
-<br />
-## Home Page
+## Home Page 
 [<img alt="Home Page" width="1000px" src="https://i.postimg.cc/pTpJP5PX/img0.png" />](https://i.postimg.cc/pTpJP5PX/img0.png)
 
 ## Login Page
@@ -32,11 +31,13 @@ Worked alongside teammates: **Ryan Bennett**, **Joy Kondo**, and **Ashkan Moghad
 ## Peer Review Page
 [<img alt="Peer Review Page" width="1000px" src="https://i.postimg.cc/DZHd0fzQ/img2.png" />](https://i.postimg.cc/DZHd0fzQ/img2.png)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- Diagrams -->
-<br />
 ## User Interaction Diagram
 [<img alt="Interaction Diagram" width="1000px" src="https://i.postimg.cc/vmPvRtFN/Interaction-Diagram.png" />](https://i.postimg.cc/vmPvRtFN/Interaction-Diagram.png)
 
 ## Database Schema
 [<img alt="UML Class Diagram" width="1000px" src="https://i.postimg.cc/yxRhZqJM/Infinity-UML-Diagram.png" />](https://i.postimg.cc/yxRhZqJM/Infinity-UML-Diagram.png)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
