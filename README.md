@@ -18,6 +18,7 @@ Worked alongside teammates: **Ryan Bennett**, **Joy Kondo**, and **Ashkan Moghad
 - [Bootstrap](https://getbootstrap.com/)
 
 
+<!-- Demo -->
 ### Home Page
 [<img alt="Home Page" width="1000px" src="https://i.postimg.cc/pTpJP5PX/img0.png" />](https://i.postimg.cc/pTpJP5PX/img0.png)
 
@@ -30,7 +31,7 @@ Worked alongside teammates: **Ryan Bennett**, **Joy Kondo**, and **Ashkan Moghad
 ### Peer Review Page
 [<img alt="Peer Review Page" width="1000px" src="https://i.postimg.cc/DZHd0fzQ/img2.png" />](https://i.postimg.cc/DZHd0fzQ/img2.png)
 
----
+<!-- Diagrams -->
 
 ### User Interaction Diagram
 [<img alt="Interaction Diagram" width="1000px" src="https://i.postimg.cc/vmPvRtFN/Interaction-Diagram.png" />](https://i.postimg.cc/vmPvRtFN/Interaction-Diagram.png)
