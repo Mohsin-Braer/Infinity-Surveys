@@ -15,7 +15,7 @@ Worked alongside teammates: **Ryan Bennett**, **Joy Kondo**, and **Ashkan Moghad
 
 ### Libraries/Technologies Used ###
 - [Django](https://www.djangoproject.com/)
-- [Python 3](https://www.python.org/)
+- [Python 3](https://www.python.org/) 
 - [Bootstrap](https://getbootstrap.com/)
 
 
